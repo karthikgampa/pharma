@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #369;
+}
+body{
+ background-image: url("contact1.jpg");
+ background-repeat: no-repeat;
+ background-size: 100%;
+}
+.admin{
+ width: 270px;
+ text-align:center;
+ margin-top: 155px;
+ margin-left: 510px;
+}
+.sm{
+ width: 270px;
+ text-align:center;
+ margin-top: -220px;
+ margin-left: 910px;
+}
+.img1,.img2{
+ border: none;
+ border-radius: 50px;
+}
+#e1,#e2{
+ margin-left: -185px;
+ margin-top: -20px;
+}
+#p1,#p2{
+ margin-left: -120px;
+ margin-top: -20px;
+}
+p{
+ margin-top: -20px;
+}
+.active{
+ background-color: #cc0052;
+}
+.dd{
+ display: none;
+ position: absolute;
+ right: 8px;
+ background-color: #f9f9f9;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+ z-index: 1;
+}
+.dd a{
+ color: black;
+ padding: 12px 16px;
+ display: block;
+ text-align: center;
+}
+.dd a:hover {
+ background-color: rgba(0,0,0,0.4);
+}
+.login:hover .dd{
+ display:block;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a class="active" href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="login"style="float:right;">
+    <a href="#" class="dbtn">Login</a>
+    <div class="dd">
+	<a href="AdminLogin.html">Admin</a>
+	<a href="SalesLogin.html">SalesMan</a>
+    </div>
+  </li>
+  <li style="float: right"><a href="Home.html">Logout</a></li>
+</ul>
+<div class="admin">
+<img src="profile4.jpg" class="img1">
+<h2>Admin</h2>
+<i class="fa fa-phone" id="p1" aria-hidden="true"></i>
+<p>9876543210</p>
+<i class="fa fa-envelope" id="e1" aria-hidden="true"></i>
+<p style="margin-left: 60px;">admin.pharmacy@gmail.com</p>
+</div>
+<div class="sm">
+<img src="profile2.jpg" class="img2">
+<h2>SalesMan</h2>
+<i class="fa fa-phone" id="p2" aria-hidden="true"></i>
+<p>9876543210</p>
+<i class="fa fa-envelope" id="e2" aria-hidden="true"></i>
+<p style="margin-left: 60px;">salesman.pharmacy@gmail.com</p>
+</div>
+</body>
+</html>

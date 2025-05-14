@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Homepage</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #369;
+}
+.dd{
+ display: none;
+ position: absolute;
+ right: 8px;
+ background-color: #f9f9f9;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+ z-index: 1;
+}
+.dd a{
+ color: black;
+ padding: 12px 16px;
+ display: block;
+ text-align: center;
+}
+.dd a:hover {
+ background-color: rgba(0,0,0,0.4);
+}
+.login:hover .dd{
+ display:block;
+}
+.active{
+ background-color: #cc0052;
+}
+.sidepanel  {
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  height: 490px;
+  top: 60px;
+  left: 10px;
+  background-color: #333;
+  transition: 0.5s;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 20px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #369;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(255,255,255,0);
+  color: #333;
+  border: none;
+  margin-top: 5px;
+}
+.openbtn:hover {
+  color:#369;
+}
+body{
+ background-image: url("saleshome1.png");
+ background-repeat: no-repeat;
+ background-size: 100%;
+}
+.content{
+ background-color: rgba(230, 230, 230,0.7);
+ text-align: center;
+ font-size: 25px;
+ margin-top: 370px;
+ height: 140px;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="AdminHome.html">Home</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="login"style="float:right;">
+    <a href="javascript:void(0)" class="dbtn">Login</a>
+    <div class="dd">
+	<a href="AdminLogin.html">Admin</a>
+	<a href="SalesLogin.html">SalesMan</a>
+    </div>
+  </li>
+  <li style="float: right"><a href="Home.html">Logout</a></li>
+</ul>
+<div id="mySidepanel" class="sidepanel">
+  <a href="#" class="closebtn" onclick="closeNav()">×</a>
+  <a href="CustomerDetails.jsp">Customer Details</a>
+  <a href="drugreg.html">Add Drug</a>
+  <a href="Update.html">Update Drug</a>
+  <a href="Delete.html">Delete Drug</a>
+  <a href="ViewDrugs.jsp">View Drugs</a>
+</div>
+<button class="openbtn" onclick="openNav()"><i class="fa fa-bars fa-lg"></i></button>  
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "245px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+<div class="content">
+<p> <br>A Doctor gives life to the patient through medicines<br>
+ A Pharmacist gives life to medicines through his knowledge and skills.<br>
+_________PROUD TO BE A PHARMACIST_________</p>
+</div>
+</body>
+</html>

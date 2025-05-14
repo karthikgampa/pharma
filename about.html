@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+<style>
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav li {
+  float: left;
+}
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav li a:hover {
+  background-color: #369;
+}
+.active{
+ background-color: #cc0052;
+}
+.nav .dd{
+ display: none;
+ position: absolute;
+ right: 8px;
+ background-color: #f9f9f9;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+ z-index: 1;
+}
+.nav .dd a{
+ color: black;
+ padding: 12px 16px;
+ display: block;
+ text-align: center;
+}
+.nav .dd a:hover {
+ background-color: rgba(0,0,0,0.4);
+}
+.login:hover .dd{
+ display:block;
+}
+.desc li{
+margin-top: 20px;
+font-size: 20px;
+}
+h2{
+margin-left: 35px;
+color: #00b33c;
+}
+img{
+width: 100%;
+height: 140px;
+}
+</style>
+</head>
+<body>
+<ul class="nav">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a class="active" href="about.html">About</a></li>
+  <li class="login"style="float:right;">
+    <a href="#" class="dbtn">Login</a>
+    <div class="dd">
+	<a href="AdminLogin.html">Admin</a>
+	<a href="SalesLogin.html">SalesMan</a>
+    </div>
+  </li>
+  <li style="float: right"><a href="Home.html">Logout</a></li>
+</ul>
+<br>
+<h2> WHO WE ARE...?</h2>
+<ul class="desc">
+	<li> We utilize our insight into the pharmaceutical business to ensure that the majority of our magnificence items and medicines are results driven, with the goal that we can offer brands that are ideal for every person. </li>
+	<li> Offers a wide determination of parapharmacy items, natural drug, fragrant healing and medications (homeopathy, veterinary items, medicine and over-the-counter prescriptions) at the best costs.</li>
+	<li> Our services incorporate administering remedies, new drug benefits, a gathering and conveyance work, glucose and cholesterol checks, a huge number of wellbeing and excellence medicines and items.</li>
+	<li> We are passionate about providing a professional, hassle-free service, meaning you receive a high quality which is what your pharmacy deserves, creating a lasting impression on your customers.</li>
+</ul>
+<br><br>
+<img src="img2.PNG" >
+</body>
+</html>
